@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The World from My Point of View</title>
+  <style>
+    :root {
+      --primary: #8e44ad;
+      --secondary: #1abc9c;
+      --bg: #1f1f2e;
+      --glass: rgba(255, 255, 255, 0.1);
+      --text: #fff;
+      --accent: #f39c12;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #f39c12, #8e44ad, #1abc9c);
+      -website-background-clip: text;
+      -website-text-fill-color: transparent;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: var(--glass);
+      border-radius: 20px;
+      padding: 1rem;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .card p, .card ul {
+      color: #f2f2f2;
+      line-height: 1.6;
+    }
+
+    .card ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #ddd;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The World from My Point of View</h1>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Mountains and Stars">
+      <h2>🌌 My Philosophy</h2>
+      <p>The world is a mix of chaos and calm. I find beauty in silence, meaning in pain, and strength in the broken pieces. We are all stories — raw, unfinished, and unforgettable.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc" alt="City and Sky">
+      <h2>🔮 Beliefs</h2>
+      <ul>
+        <li>Darkness reveals truth.</li>
+        <li>Kindness is power.</li>
+        <li>Struggles forge legends.</li>
+        <li>Hope is rebellion.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Inspirational Landscape">
+      <h2>✨ Inspirations</h2>
+      <p>I draw inspiration from late-night thoughts, hidden smiles, people who rise after falling, and the quiet strength of those who carry storms inside them but still walk with grace.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308" alt="Contact Image">
+      <h2>📫 Connect</h2>
+      <p>If you see the world the way I do, let's create something powerful together. Contact: <br><strong>palden.lama475@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Palden. Crafted with heart and style.
+  </footer>
+
+</body>
+</html>
